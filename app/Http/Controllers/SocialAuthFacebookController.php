@@ -29,15 +29,13 @@ class SocialAuthFacebookController extends Controller
         $user = $service->createOrGetUser($socialUser);
         auth()->login($user);
 
-        $fileContents = file_get_contents($socialUser->getAvatar());
-
-        echo app_path();
+        // $fileContents = file_get_contents($socialUser->getAvatar());
         // File::put(public_path() . '/uploads/profile/' . $socialUser->getId() . ".jpg", $fileContents);
 
         // //To show picture 
         // $picture = public_path('uploads/profile/' . $socialUser->getId() . ".jpg");
 
-        // return redirect()->to('/home')->with(array('avatar'=>$picture));
+        return redirect()->to('/home');
     }
 
     public function getSocialUser()
