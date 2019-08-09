@@ -88,6 +88,17 @@
                 <div class="links">
                     <a href="https://laravel.com/docs">This site is maintained by <sup>Dev</sup>.Wai</a>
                 </div>
+                <br>
+                <br>
+                <center>
+                     <p> This site is dedicated for the people who doesn't have the enough<br> time to find their
+                         mate 
+                     </p>
+                     <p>
+                         I strongly grantee this site will help you find the perfect<br> match for your entire life 
+                         :D
+                     </p>
+                </center>
             </div>
         </div>
     </body>
