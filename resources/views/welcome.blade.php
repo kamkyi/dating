@@ -91,7 +91,7 @@
                 <br>
                 <br>
                 <center>
-                     <p> This site is dedicated for the people who doesn't have the enough<br> time to find their
+                     <p> This site is dedicated for the people who do not have the enough<br> time to find their
                          mate 
                      </p>
                      <p>
