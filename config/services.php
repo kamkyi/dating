@@ -44,4 +44,11 @@ return [
         ],
     ],
 
+    'facebook' => [
+        'client_id' => '499461080614740',
+        'client_secret' => '0189fcf166fac017a5b22e50f7f7be62',
+        //'redirect' => 'https://pure-sea-83942.herokuapp.com/callback',
+        'redirect' => 'http://localhost:8000/callback',
+    ],
+
 ];
