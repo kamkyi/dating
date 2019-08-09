@@ -98,6 +98,7 @@
                          I strongly grantee this site will help you find the perfect<br> match for your entire life 
                          :D
                      </p>
+                     <p>Born Date : 9 August , 2019 FRI , 11:00 pm </p>
                 </center>
             </div>
         </div>
