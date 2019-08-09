@@ -1,11 +1,8 @@
 <?php
 
-// SocialAuthFacebookController.php
-
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Socialite;
+use Socialite,File;
 use App\Services\SocialFacebookAccountService;
 
 class SocialAuthFacebookController extends Controller
@@ -29,6 +26,13 @@ class SocialAuthFacebookController extends Controller
     {
         $user = $service->createOrGetUser(Socialite::driver('facebook')->user());
         auth()->login($user);
+
+        $fileContents = file_get_contents($user->getAvatar());
+        File::put(public_path() . '/uploads/profile/' . $user->getId() . ".jpg", $fileContents);
+
+        //To show picture 
+        $picture = public_path('uploads/profile/' . $user->getId() . ".jpg");
+
         return redirect()->to('/home');
     }
 }
