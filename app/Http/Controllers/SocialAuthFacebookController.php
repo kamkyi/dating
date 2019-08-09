@@ -24,15 +24,22 @@ class SocialAuthFacebookController extends Controller
      */
     public function callback(SocialFacebookAccountService $service)
     {
-        $user = $service->createOrGetUser(Socialite::driver('facebook')->user());
+        $socialUser = $this->getSocialUser();
+
+        $user = $service->createOrGetUser($socialUser);
         auth()->login($user);
 
-        $fileContents = file_get_contents($user->getAvatar());
-        File::put(public_path() . '/uploads/profile/' . $user->getId() . ".jpg", $fileContents);
+        $fileContents = file_get_contents($socialUser->getAvatar());
+        File::put(public_path() . '/uploads/profile/' . $socialUser->getId() . ".jpg", $fileContents);
 
         //To show picture 
-        $picture = public_path('uploads/profile/' . $user->getId() . ".jpg");
+        $picture = public_path('uploads/profile/' . $socialUser->getId() . ".jpg");
 
-        return redirect()->to('/home');
+        return redirect()->to('/home')->with(array('avatar'=>$picture));
+    }
+
+    public function getSocialUser()
+    {
+        return Socialite::driver('facebook')->user();
     }
 }
