@@ -70,7 +70,9 @@
             body{
                 background-image: linear-gradient(white, grey);
             }
-    
+            p{
+                margin: 5px;
+            }
         </style>
     </head>
     <body>
