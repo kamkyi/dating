@@ -101,11 +101,11 @@
                 <br>
                 <br>
                 <center>
-                     <p> This site is dedicated for the people who do not have the enough<br> time to find their
+                     <p> This site is dedicated for the people who do not have the enough time to find their
                          mate 
                      </p>
                      <p>
-                         I strongly grantee this site will help you find the perfect<br> match for your entire life 
+                         I strongly grantee this site will help you find the perfect match for your entire life 
                          :D
                      </p>
                      <p>Born Date : 9 August , 2019 FRI , 11:00 pm </p>
