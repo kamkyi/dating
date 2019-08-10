@@ -115,7 +115,7 @@
                 <center>
                          <div class="btn-group">
                                 @auth
-                                <a href="{{ url('/home') }}">NearBy Mate&nbsp;<i class="fas fa-search-location fa-xs"></i></a>
+                                <a href="{{ url('/home') }}" class="btn">NearBy Mate&nbsp;<i class="fas fa-search-location fa-xs"></i></a>
                                 <a href="{{ url('/home') }}" class="btn">Fun Place&nbsp;<i class="fas fa-gamepad fa-xs"></i></a>
                                 <a href="{{ url('/home') }}" class="btn">Love Astrologer&nbsp;<i class="fas fa-feather-alt"></i></a>
                                 @else
