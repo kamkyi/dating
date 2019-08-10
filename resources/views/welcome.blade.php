@@ -109,9 +109,9 @@
                 <br>
                 <center>
                          <div class="btn-group">
-                                <button type="button" class="btn">Find NearBy Mate</button>
-                                <button type="button" class="btn">Fun Place</button>
-                                <button type="button" class="btn">Love Astrologer</button>
+                                <button type="button" class="btn">NearBy Mate&nbsp;<i class="fas fa-search-location fa-xs"></i></button>
+                                <button type="button" class="btn">Fun Place&nbsp;<i class="fas fa-gamepad fa-xs"></i></button>
+                                <button type="button" class="btn">Love Astrologer&nbsp;<i class="fas fa-feather-alt"></i></button>
                          </div>
                 </center>
             </div>
