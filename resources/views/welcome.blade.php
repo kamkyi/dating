@@ -73,6 +73,14 @@
             p{
                 margin: 5px;
             }
+
+            p#dev{
+                position: absolute;
+                bottom:2px;
+                left: 0;
+                right: 0;
+            }
+         
         </style>
     </head>
     <body>
@@ -98,7 +106,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">This site is maintained by <sup>Dev</sup>.Wai</a>
+                    
                 </div>
                 <br>
                 <br>
@@ -127,6 +135,13 @@
                                 @endauth
                          </div>
                 </center>
+            
+                <center>
+                <p id="dev">
+                    Copyright &copy; Dev. Wai 2019 AUG
+                </p>
+                </center>
+                
             <!-- Modal -->
             <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -145,5 +160,6 @@
                 <!-- modal end -->
             </div>
         </div>
+        
     </body>
 </html>
