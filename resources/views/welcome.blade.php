@@ -75,11 +75,11 @@
                         <a href="{{ url('/home') }}">Home</a>
                     @else
                         <a href="{{url('/redirect')}}" >Login with Facebook</a>
-                        <a href="{{ route('login') }}">Login</a>
+                        <!-- <a href="{{ route('login') }}">Login</a>
 
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
-                        @endif
+                        @endif -->
                     @endauth
                 </div>
             @endif
@@ -108,7 +108,7 @@
                          <div class="btn-group">
                                 <button type="button" class="btn">Find NearBy Mate</button>
                                 <button type="button" class="btn">Fun Place</button>
-                                <button type="button" class="btn">Love Astroger</button>
+                                <button type="button" class="btn">Love Astrologer</button>
                          </div>
                 </center>
             </div>
