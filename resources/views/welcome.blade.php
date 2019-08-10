@@ -20,7 +20,7 @@
                 background-color: #fff;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
-                font-weight: 200;
+                font-weight: 800;
                 height: 100vh;
                 margin: 0;
             }
@@ -50,7 +50,8 @@
             }
 
             .title {
-                font-size: 50px;
+                font-size: 48px;
+                text-shadow: 0px 1px black;
             }
 
             .links > a {
@@ -65,6 +66,9 @@
 
             .m-b-md {
                 margin-bottom: 30px;
+            }
+            body{
+                background-image: linear-gradient(white, grey);
             }
     
         </style>
