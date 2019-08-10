@@ -104,6 +104,8 @@
                      </p>
                      <p>Born Date : 9 August , 2019 FRI , 11:00 pm </p>
                 </center>
+                <br>
+                <br>
                 <center>
                          <div class="btn-group">
                                 <button type="button" class="btn">Find NearBy Mate</button>
