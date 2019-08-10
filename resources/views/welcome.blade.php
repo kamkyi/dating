@@ -109,7 +109,11 @@
                 <br>
                 <center>
                          <div class="btn-group">
+                                @auth
+                                <button type="button" class="btn">NearBy Mate&nbsp;<i class="fas fa-search-location fa-xs"></i></button>
+                                @else
                                 <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">NearBy Mate&nbsp;<i class="fas fa-search-location fa-xs"></i></button>
+                                @endauth
                                 <button type="button" class="btn">Fun Place&nbsp;<i class="fas fa-gamepad fa-xs"></i></button>
                                 <button type="button" class="btn">Love Astrologer&nbsp;<i class="fas fa-feather-alt"></i></button>
                          </div>
@@ -119,11 +123,12 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                 <div class="modal-body">
-                     <b>Are you over 18 ?</b>
+                     <b>Please Login</b>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-warning" data-dismiss="modal">No</button>
-                    <button type="button" class="btn btn-success">Yes</button>
+                <div class="modal-body">
+                        <center>
+                        <b><a href="{{url('/redirect')}}" class="btn btn-secondary" ><i class="fab fa-facebook-f fa-sm"></i>&nbsp; Login</a></b>
+                        </center>
                 </div>
                 </div>
             </div>
