@@ -130,7 +130,7 @@
                 </div>
                 <div class="modal-body">
                         <center>
-                        <b><a href="{{url('/redirect')}}" class="btn btn-secondary" ><i class="fab fa-facebook-f fa-sm"></i>&nbsp; Login</a></b>
+                        <b><a href="{{url('/redirect')}}" class="btn btn-secondary" ><i class="fab fa-facebook-f fa-sm"></i>&nbsp; <strong>Login</strong></a></b>
                         </center>
                 </div>
                 </div>
