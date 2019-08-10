@@ -109,11 +109,26 @@
                 <br>
                 <center>
                          <div class="btn-group">
-                                <button type="button" class="btn">NearBy Mate&nbsp;<i class="fas fa-search-location fa-xs"></i></button>
+                                <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">NearBy Mate&nbsp;<i class="fas fa-search-location fa-xs"></i></button>
                                 <button type="button" class="btn">Fun Place&nbsp;<i class="fas fa-gamepad fa-xs"></i></button>
                                 <button type="button" class="btn">Love Astrologer&nbsp;<i class="fas fa-feather-alt"></i></button>
                          </div>
                 </center>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-body">
+                     <b>Are you over 18 ?</b>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-success">Yes</button>
+                </div>
+                </div>
+            </div>
+            </div>
+                <!-- modal end -->
             </div>
         </div>
     </body>
