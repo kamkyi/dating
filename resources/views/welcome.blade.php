@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/80682fba6d.js"></script>
         <!-- bootstrap cdn end -->
         <style>
             html, body {
@@ -74,7 +75,7 @@
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{url('/redirect')}}" >Login with Facebook</a>
+                        <a href="{{url('/redirect')}}" ><i class="fab fa-facebook-f fa-xs"></i>&nbsp; Login</a>
                         <!-- <a href="{{ route('login') }}">Login</a>
 
                         @if (Route::has('register'))
