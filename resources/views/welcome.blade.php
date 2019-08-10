@@ -115,9 +115,9 @@
                 <center>
                          <div class="btn-group">
                                 @auth
-                                <button type="button" class="btn">NearBy Mate&nbsp;<i class="fas fa-search-location fa-xs"></i></button>
-                                <button type="button" class="btn">Fun Place&nbsp;<i class="fas fa-gamepad fa-xs"></i></button>
-                                <button type="button" class="btn">Love Astrologer&nbsp;<i class="fas fa-feather-alt"></i></button>
+                                <a href="{{ url('/home') }}">NearBy Mate&nbsp;<i class="fas fa-search-location fa-xs"></i></a>
+                                <a href="{{ url('/home') }}" class="btn">Fun Place&nbsp;<i class="fas fa-gamepad fa-xs"></i></a>
+                                <a href="{{ url('/home') }}" class="btn">Love Astrologer&nbsp;<i class="fas fa-feather-alt"></i></a>
                                 @else
                                 <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">NearBy Mate&nbsp;<i class="fas fa-search-location fa-xs"></i></button>
                                 <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">Fun Place&nbsp;<i class="fas fa-gamepad fa-xs"></i></button>
