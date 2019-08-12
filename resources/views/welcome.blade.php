@@ -110,12 +110,6 @@
                 <div class="title m-b-md">
                      <img src="{{asset('img/heart.png')}}" alt="Burmese dating" id="heart">
                 </div>
-
-                <div class="links">
-                    
-                </div>
-                <br>
-                <br>
                 <center>
                      <p> This site is dedicated for the people who do not have the enough time to find their
                          mate 
@@ -128,6 +122,7 @@
                 </center>
                 <br>
                 <br>
+        
                 <center>
                                 @auth
                                 <div class="btn-group">
