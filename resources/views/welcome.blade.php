@@ -15,139 +15,92 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/80682fba6d.js"></script>
+        <link rel="stylesheet" href="{{asset('css/style.css')}}">
         <!-- bootstrap cdn end -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 800;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 48px;
-                text-shadow: 0px 1px black;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-            body{
-                background-image: linear-gradient(white, grey);
-            }
-            p{
-                margin: 5px;
-            }
-            #heart{
-                width: 20vw;
-                margin: 0;
-                padding: 0;
-            }
-
-            p#dev{
-                position: absolute;
-                bottom:2px;
-                left: 0;
-                right: 0;
-            }
-         
-        </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <!-- container -->
+        <div class="container-fluid">
+           <!-- navbar -->
             @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                <ul class="nav justify-content-end">
+                   @auth
+                        <li class="nav-item">
+                           <a class="nav-link" href="{{ url('/home') }}">Home</a>
+                        </li>
                     @else
-                        <a href="{{url('/redirect')}}" ><i class="fab fa-facebook-f fa-xs"></i>&nbsp; Login</a>
-                        <!-- <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('/redirect')}}" ><i class="fab fa-facebook-f fa-xs"></i>&nbsp; Login</a>
+                        </li>
+                        
                     @endauth
-                </div>
+                </ul>
             @endif
+            <!-- navbar end -->
+            <!-- flex arranger -->
+            <center>
+            <div class="d-flex justify-content-center flex-column" style="height:80vh;width:100%;">
+            <div class="p-2">
+                    <!-- feature img -->
+                    <center>
+                    <img src="{{asset('img/heart.png')}}" alt="Burmese dating" id="heart">
+                    </center>
+                    <!-- feature img end -->
+            </div>
+            <div class="p-2">
+                           <!-- dedication -->
+                            <center>
+                                <p> This site is dedicated for the people who do not have the enough time to find their
+                                    mate 
+                                </p>
+                                <p>
+                                    I strongly grantee this site will help you find the perfect match for your entire life 
+                                    :D
+                                </p>
+                                <p>Born Date : 9 August , 2019 FRI , 11:00 pm </p>
+                            </center>
+                           <!-- dedication end -->
+            </div>
+            <div class="p-2">
+                              <!-- buttons -->
+                                <center>
+                                                    @auth
+                                                    <div class="btn-group">
+                                                    <a href="{{ url('/home') }}" class="btn btn-secondary">Fun Place&nbsp;<i class="fas fa-gamepad fa-xs"></i></a>
+                                                    <a href="{{ url('/home') }}" class="btn btn-secondary">Love Astrologer&nbsp;<i class="fas fa-feather-alt"></i></a>
+                                                    </div>
+                                                    <a href="{{ url('/home') }}" class="btn btn-success btn-near-by-mate">NearBy Mate&nbsp;<i class="fas fa-search-location fa-xs"></i></a>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <a href="{{ url('/home') }}" class="btn btn-success btn-near-by-mate-hided">NearBy Mate&nbsp;<i class="fas fa-search-location fa-xs"></i></a>
+                                                    @else
+                                                    <div class="btn-group">
+                                                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">Fun Place&nbsp;<i class="fas fa-gamepad fa-xs"></i></button>
+                                                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">Love Astrologer&nbsp;<i class="fas fa-feather-alt"></i></button>
+                                                    </div>
+                                                    <button type="button"  class="btn btn-success btn-near-by-mate" data-toggle="modal" data-target="#exampleModalCenter">NearBy Mate&nbsp;<i class="fas fa-search-location fa-xs"></i></button>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <button type="button"  class="btn btn-success btn-near-by-mate-hided btn-block" data-toggle="modal" data-target="#exampleModalCenter">NearBy Mate&nbsp;<i class="fas fa-search-location fa-xs"></i></button>
+                                                    @endauth
+                                        
+                                </center>    
+                                <!-- buttons end -->
+            </div>
+            </div>
+            </center>
+            <!-- flex arranger end -->
 
-            <div class="content">
-                <div class="title m-b-md">
-                     <img src="{{asset('img/heart.png')}}" alt="Burmese dating" id="heart">
-                </div>
-                <center>
-                     <p> This site is dedicated for the people who do not have the enough time to find their
-                         mate 
-                     </p>
-                     <p>
-                         I strongly grantee this site will help you find the perfect match for your entire life 
-                         :D
-                     </p>
-                     <p>Born Date : 9 August , 2019 FRI , 11:00 pm </p>
-                </center>
-                <br>
-                <br>
-        
-                <center>
-                                @auth
-                                <div class="btn-group">
-                                <a href="{{ url('/home') }}" class="btn btn-secondary">Fun Place&nbsp;<i class="fas fa-gamepad fa-xs"></i></a>
-                                <a href="{{ url('/home') }}" class="btn btn-secondary">Love Astrologer&nbsp;<i class="fas fa-feather-alt"></i></a>
-                                </div>
-                                <a href="{{ url('/home') }}" class="btn btn-success hidden-xs-down">NearBy Mate&nbsp;<i class="fas fa-search-location fa-xs"></i></a>
-                                @else
-                                <div class="btn-group">
-                                <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">Fun Place&nbsp;<i class="fas fa-gamepad fa-xs"></i></button>
-                                <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">Love Astrologer&nbsp;<i class="fas fa-feather-alt"></i></button>
-                                </div>
-                                <button type="button" class="btn btn-success hidden-xs-down" data-toggle="modal" data-target="#exampleModalCenter">NearBy Mate&nbsp;<i class="fas fa-search-location fa-xs"></i></button>
-                                @endauth
-                     
-                </center>
-            
-                <center>
-                <p id="dev">
-                    Copyright &copy; Dev. Wai 2019 AUG
-                </p>
-                </center>
-                
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        </div>
+        <!-- container end -->
+          
+    </body>
+</html>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                 <div class="modal-body">
@@ -161,9 +114,9 @@
                 </div>
             </div>
             </div>
-                <!-- modal end -->
-            </div>
-        </div>
-        
-    </body>
-</html>
+<!-- modal end -->
+<!-- copy right -->
+<p id="dev">
+     Copyright &copy; Dev. Wai 2019 AUG
+</p>
+<!-- copy right end -->

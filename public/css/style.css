@@ -1,0 +1,36 @@
+
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(white,#fff,grey);
+}
+#heart{
+     width: 21vw;
+}
+#dev{
+     position: absolute;
+     bottom:2px;
+     height: 10px;
+     width: 100%;
+     text-align:center;
+}
+.btn-near-by-mate-hided{
+    display: none;
+    width: 75%;
+
+}
+
+/* Smartphones ----------- */
+@media only screen and (max-width: 510px) {
+        .btn-near-by-mate{
+            display: none;
+        }
+        .btn-near-by-mate-hided{
+            display: block;
+        }
+}
+      
