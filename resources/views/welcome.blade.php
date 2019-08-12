@@ -15,8 +15,46 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/80682fba6d.js"></script>
-        <link rel="stylesheet" href="{{asset('css/style.css')}}">
         <!-- bootstrap cdn end -->
+        <!-- style -->
+        <style>  
+        html, body {
+            background-color: #fff;
+            color: #636b6f;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 800;
+            height: 100vh;
+            margin: 0;
+            background-image: linear-gradient(white,#fff,grey);
+        }
+        #heart{
+            width: 21vw;
+        }
+        #dev{
+            position: absolute;
+            bottom:2px;
+            height: 10px;
+            width: 100%;
+            text-align:center;
+        }
+        .btn-near-by-mate-hided{
+            display: none;
+            width: 75%;
+
+        }
+
+        /* Smartphones ----------- */
+        @media only screen and (max-width: 510px) {
+                .btn-near-by-mate{
+                    display: none;
+                }
+                .btn-near-by-mate-hided{
+                    display: block;
+                }
+        }
+            
+        </style>
+        <!-- style end -->
     </head>
     <body>
         <!-- container -->
