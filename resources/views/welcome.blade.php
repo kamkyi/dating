@@ -25,10 +25,10 @@
             font-weight: 800;
             height: 100vh;
             margin: 0;
-            background-image: linear-gradient(white,#fff,grey);
+            background-image: linear-gradient(white,#fff,#DCC7AA);
         }
         #heart{
-            width: 21vw;
+            width: 18vw;
         }
         #dev{
             position: absolute;
@@ -81,7 +81,7 @@
             <div class="p-2">
                     <!-- feature img -->
                     <center>
-                    <img src="{{asset('img/heart.png')}}" alt="Burmese dating" id="heart">
+                    <img src="{{asset('img/heart.gif')}}" alt="Burmese dating" id="heart">
                     </center>
                     <!-- feature img end -->
             </div>
