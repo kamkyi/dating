@@ -44,16 +44,11 @@ return [
         ],
     ],
 
-    // 'facebook' => [
-    //     'client_id' => '727597687669560',
-    //     'client_secret' => '9fef731251140d04947ea53f1bf823d2',
-    //     'redirect' => 'https://pure-sea-83942.herokuapp.com/callback',
-    //     //'redirect' => 'http://localhost:8000/callback',
-    // ],
-    
     'facebook' => [
-        'client_id' => '535517927191728',
-        'client_secret' => '121aa818995eba6b6481a8cc2c0a5a5a',
-        'redirect' => 'http://localhost:8000/callback',
+        'client_id' => '727597687669560',
+        'client_secret' => '9fef731251140d04947ea53f1bf823d2',
+        'redirect' => 'https://pure-sea-83942.herokuapp.com/callback',
+        //'redirect' => 'http://localhost:8000/callback',
     ],
+
 ];
