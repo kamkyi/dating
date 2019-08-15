@@ -28,7 +28,7 @@
             background-image: linear-gradient(white,#fff,#DCC7AA);
         }
         #heart{
-            width: 18vw;
+            width: 11%;
         }
         #dev{
             position: absolute;
