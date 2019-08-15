@@ -81,7 +81,7 @@
             <div class="p-2">
                     <!-- feature img -->
                     <center>
-                    <img src="{{asset('img/heart-rain.gif')}}" alt="Burmese dating" id="heart">
+                    <img src="{{asset('img/heart.gif')}}" alt="Burmese dating" id="heart">
                     </center>
                     <!-- feature img end -->
             </div>
